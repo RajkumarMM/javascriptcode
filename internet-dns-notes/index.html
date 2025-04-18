@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 1200px;
+        }
+        h3, h4{
+            text-transform: capitalize;
+        }
+        h3, h4, p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h3> how the internet works ?</h3>
+    <p>The Internet operates as a vast, interconnected network of computers that enables global communication and access to a wide range of information and services. Here's a simplified explanation of how it works:</p>
+            <ol>
+                <li>
+                    <h4>Infrastructure:</h4> 
+                    <p>The Internet is built on a physical infrastructure consisting of routers, switches, and cables (both underground and undersea) that connect computers globally. This infrastructure is maintained by telecommunications companies and internet service providers (ISPs).</p>
+                </li>
+                <li>
+                    <h4>IP Addresses:</h4>
+                    <p>Every device connected to the Internet is assigned a unique IP address, which serves as its identifier on the network. This address is crucial for routing data packets across the network.</p>
+                </li>
+                <li>
+                    <h4>Domain Names:</h4>
+                    <p>While computers communicate using IP addresses, humans find it easier to remember domain names (e.g., google.com). Domain Name System (DNS) servers translate these domain names into IP addresses.</p>
+                </li>
+                <li>
+                    <h4>Data Transmission:</h4> 
+                    <p> When you request a webpage, your computer sends a request to the DNS server to resolve the domain name into an IP address. Once the IP address is obtained, your computer sends a request to the web server hosting the webpage. The server responds by sending back the webpage data, broken down into small packets.</p>
+                </li>
+                <li>
+                    <h4>Routing and Delivery:</h4> 
+                    <p>These packets travel across the Internet, passing through various routers until they reach their destination. Each packet contains information about its origin and destination, allowing it to be routed correctly despite potential disruptions in the network.</p>
+                </li>
+                <li>
+                    <h4>Reassembly:</h4> 
+                    <p>Upon reaching the destination, the packets are reassembled in the correct order to reconstruct the original webpage or data.</p>
+                </li>
+            </ol>
+    
+        <h3>DNS</h3>
+        <p>The Domain Name System (DNS) is a critical component of the Internet that translates human-friendly domain names into numerical IP addresses that computers use to identify each other. This process is essential for accessing websites and online services. Here's a detailed explanation with examples:</p>
+            <h3>How DNS Works</h3>
+            <ul>
+                <li>
+                    <h4>User Request:</h4> 
+                    <p> When you type a domain name (e.g., www.example.com) into your web browser, the browser initiates a DNS query to find the corresponding IP address.</p>
+                </li>
+                <li>
+                    <h4>Recursive Query:</h4> 
+            <p>The browser sends a recursive DNS query to a DNS resolver, typically managed by your Internet Service Provider (ISP). This resolver is responsible for finding the IP address associated with the domain name.</p>
+                </li>
+                <li>
+                    <h4>Query Pathway:</h4>
+                    <p> If the resolver doesn’t know the IP address, it asks a DNS root server for guidance.
+                        The root server responds with the address of a Top-Level Domain (TLD) server (e.g., .com server).
+                        The resolver then queries the TLD server, which directs it to an authoritative DNS server for the domain (example.com).
+                        Finally, the authoritative server provides the IP address of the requested domain.</p>
+                </li>
+                <li>
+                    <h4>Response and Resolution:</h4> 
+                    <p>Once the resolver obtains the IP address, it returns this information to your browser. Your browser can now send a request to the IP address to access the desired website.</p>
+                </li>
+            </ul>
+            
+            
+            
+            
+            
+</body>
+</html>
